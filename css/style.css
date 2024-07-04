@@ -1,0 +1,355 @@
+/*
+    *****************
+    DONE BY:-   Harshita Soni
+    
+    *****************
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* font-size: large; */
+    /* font-weight: bold; */
+    text-transform: uppercase;
+  }
+  
+  nav {
+    background-color: black;
+    color: white;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 60%;
+        grid-template-columns: 30% 60%;
+    -webkit-column-gap: 10%;
+            column-gap: 10%;
+    padding: 0% 5%;
+  }
+  
+  nav .array-inputs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+    place-content: center;
+    padding: 5% 0%;
+  }
+  
+  nav .array-inputs #a_size {
+    padding: 5% 0%;
+  }
+  
+  nav .array-inputs #a_speed {
+    padding: 5% 0%;
+  }
+  
+  nav .array-inputs #a_generate {
+    background-color: transparent;
+    /* border: none; */
+    /* outline: none; */
+    color: white;
+    margin-top:10%;
+    padding: 4% 4% 4% 4%;
+    
+    display: inline-block;
+    border-color:2px solid white;
+    border-color:white;
+  }
+  
+  nav .array-inputs #a_generate:hover {
+    cursor: pointer;
+    color:grey;
+  }
+  
+  nav .header_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  nav .header_right .nav-heading {
+    display: inline-block;
+    font-size: xxx-large;
+    padding: 3% 0%;
+  }
+  nav .header_right .algos { 
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between
+  } 
+  
+  nav .header_right .algos button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    /* padding: 5% 0%; */
+    padding-left: 1%;
+    padding-right: 1%; 
+    font-size: x-large;
+    border-radius:0.25rem ;
+  }
+  nav .header_right .algos button:hover{
+    color: grey;
+    transform: translateY(-10px);
+  }
+  
+  
+  nav .header_right .algos .butt_locked {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  nav .header_right .algos .butt_locked:hover {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  nav .header_right .algos .butt_selected {
+    background-color: white;
+    color: green;
+  }
+  
+  nav .header_right .algos .butt_selected:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  nav .header_right .algos .butt_unselected:hover {
+  
+    cursor: pointer;
+  }
+  
+  section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 60% 20%;
+        grid-template-columns: 20% 60% 20%;
+  }
+  
+  section .Complexity_Containers {
+    /* margin-top: 20%; */
+  }
+  
+  section .Complexity_Containers .Pair_Definitions {
+    /* margin-top: 20%; */
+  }
+  
+  section .Complexity_Containers .Pair_Definitions p {
+    display: inline;
+  }
+  
+  section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+    /* font-size: medium; */
+    text-transform: none;
+  }
+  
+  section #Info_Cont1 {
+    /* padding: 20% 10%; */
+   
+  }
+  
+  section #Info_Cont1 h3 {
+    text-decoration: underline;
+  }
+  
+  section #array_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 70vh;
+  }
+  
+  section #Info_Cont2 {
+    /* padding: 20% 10%; */
+  }
+  
+  section #Info_Cont2 h3 {
+    text-decoration: underline;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  
+  
+  
+  /* Base styles for buttons */
+  .button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Flex container to align buttons */
+  .buttons.algos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .button {
+        width: 100%;
+        margin: 5px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  
+  .buttons button {
+    display: flex;
+    /* flex: 1 1 30%; */
+    /* margin: 5px; */
+    /* padding: 10px; */
+    font-size: 2rem; 
+    /* flex-direction: column; */
+    justify-content: space-between;
+    gap: 0.5rem;
+    /* color: blueviolet; */
+    
+  }
+  /* 
+  .buttons button:hover{
+    color: gold;
+    background-color: gold;
+  } */
+  .parent{
+    margin:10%;
+    display:flex;
+    flex-direction: column;
+  }
+  .part1{
+    margin-bottom: 5%;
+    border: 0.25rem solid ;
+    padding :0.3rem;
+  }
+  .part2{
+    margin-bottom: 5%;
+  }
+  .part3{
+    margin-bottom: 5%;
+  }
+  
+  /* Base styles for part2 and part3 */
+  #Info_Cont1, #Info_Cont2 {
+      margin: 20px 0;
+      text-align: center;
+  }
+  
+  #Info_Cont1 h3, #Info_Cont2 h3 {
+      font-size: 24px;
+  }
+  
+  .Pair_Definitions {
+      font-size: 18px;
+      margin: 5px 0;
+  }
+  
+  /* Responsive styles for part2 and part3 */
+  @media (max-width: 1024px) {
+      #Info_Cont1 h3, #Info_Cont2 h3 {
+          font-size: 22px;
+      }
+  
+      .Pair_Definitions {
+          font-size: 16px;
+      }
+  }
+  
+  @media (max-width: 768px) {
+      #Info_Cont1, #Info_Cont2 {
+          text-align: center;
+      }
+  
+      #Info_Cont1 h3, #Info_Cont2 h3 {
+          font-size: 20px;
+      }
+  
+      .Pair_Definitions {
+          font-size: 14px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      #Info_Cont1 h3, #Info_Cont2 h3 {
+          font-size: 18px;
+      }
+  
+      .Pair_Definitions {
+          font-size: 12px;
+      }
+  }
+  
+  /* hshjsg */
+  
+  
+  
+  @media (min-width: 500px) {
+    ul {
+      grid-auto-flow: column;
+    }
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  li:hover ~ li p {
+    animation: wave-animation 0.3s infinite;
+  }
+  
+  /* below is just for demo styling */
+  
+  
+  
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  footer{
+    width:100%;
+    background-color:black ;
+    margin-top: auto;
+    
+  }
+  footer p{
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 5rem;
+  font-size: 1.4rem;
+  }
+  footer p a i:hover{
+    color: aqua;
+  }
+  
+  
